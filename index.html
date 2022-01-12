@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <script src="js.js"></script>
+  </head>
+  <body>
+    <table style="width:auto;">
+      <tr>
+        <td>
+          <input type="number" id="num" placeholder="Введите число">
+          <button onclick="addArray();">Добавить</button>
+          <br><br>
+          <button onclick="clean();" id="clean">Очистить</button>
+          <br><br>
+          <button onclick="sort();" id="sort">Сортировка</button>
+        </td>
+        <td style="position: absolute; margin-left: 20px;">
+          <input style="text-align: left;" type="number" id="id" placeholder="Идентификатор сортировки">
+          <button onclick="getArray();">Найти</button>
+          <br>
+          <div id="out"></div>
+        </td>
+      </tr>
+    </table>
+    <table id="result" style="width:auto;">
+    </table>
+  </body>
+</html>
